@@ -1,5 +1,5 @@
 const sayHello = () => {
-    console.log('Hello World!');
+    console.log('Hello World! and Hello Japan!');
 }
 
 sayHello();
