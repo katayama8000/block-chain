@@ -23,7 +23,8 @@
 - refactor: A code change that neither fixes a bug nor adds a feature
 - test: Adding missing tests or correcting existing tests
 
-https://atmarkit.itmedia.co.jp/ait/articles/1708/01/news015.html
-git fetch origin pull/157/head:PR-157
-https://qiita.com/c6tower/items/fe2aa4ecb78bef69928f
-https://github.com/angular/angular
+git fetch origin pull/157/head:PR-157  
+[flow](https://atmarkit.itmedia.co.jp/ait/articles/1708/01/news015.html)  
+[issue](https://qiita.com/c6tower/items/fe2aa4ecb78bef69928f)  
+[angular](https://github.com/angular/angular)
+[PR](https://github.com/good-katayama-family/seppan-for-family/pull/33)
