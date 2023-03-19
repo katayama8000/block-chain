@@ -1,7 +1,12 @@
 {
-  "name": "notionAPI",
-  "packageManager": "yarn@3.3.1",
-  "dependencies": {
-    "@notionhq/client": "^2.2.3"
+  "name": "block-chain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/katayama8000/block-chain.git",
+  "author": "katayama8000 <tattu.0310@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "crypto-js": "^4.1.1"
   }
 }
