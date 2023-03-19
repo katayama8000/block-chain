@@ -56,9 +56,6 @@ originalCoin.addBlock(new Block("07/03/2019", { SendCoinToB: 8 }));
 
 originalCoin.chain[1].data = { SendCoinToA: 200 };
 
-//STEP2 以下の1行の記述を移動させる
-
-
 console.log('ブロックの中身を書き換えた状態:' + originalCoin.isChainValid());
 
 //STEP1 ブロックのデータを書き換えた状態で、更にハッシュ値を再計算する
