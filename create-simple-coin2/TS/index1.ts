@@ -7,10 +7,9 @@ class Block {
   public hash: string;
   public nonce: number;
 
-  constructor(timestamp: Date, data: any, previousHash: string) {
+  constructor(timestamp: Date, data: any) {
     this.timestamp = timestamp;
     this.data = data;
-    this.previousHash = previousHash;
     this.hash = this.calculateHash();
     this.nonce = 0;
   }
@@ -42,7 +41,7 @@ class Blockchain {
   }
 
   createGenesisBlock(): Block {
-    return new Block(new Date('05/02/2019'), 'GenesisBlock', '0');
+    return new Block(new Date('05/02/2019'), 'GenesisBlock');
   }
 
   getLatestBlock(): Block {
@@ -75,11 +74,7 @@ class Blockchain {
 
 let originalCoin = new Blockchain();
 
-originalCoin.addBlock(
-  new Block(new Date('06/02/2019'), { SendCoinToA: 3 }, '')
-);
-originalCoin.addBlock(
-  new Block(new Date('07/03/2019'), { SendCoinToB: 8 }, '')
-);
+originalCoin.addBlock(new Block(new Date('06/02/2019'), { SendCoinToA: 3 }));
+originalCoin.addBlock(new Block(new Date('07/03/2019'), { SendCoinToB: 8 }));
 
 console.log(JSON.stringify(originalCoin, null, 2));
